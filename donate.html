@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate</title>
+    <link rel="stylesheet" href="donate.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+  </head>
+  <body>
+    <!---Goal Meter--->
+    <label for="goal">Donation Goal:</label>
+    <meter
+      id="goal"
+      min="0"
+      max="1000000"
+      low="333333"
+      high="666666"
+      optimum="800000"
+      value="609380"
+    >
+      at 609380/1000000
+    </meter>
+    <br />
+    <br />
+    <!--Form-->
+    <div class="form">
+      <form>
+        <h1>Personal Information</h1>
+        <div class="pinfo">
+          <label for="fname">First Name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="First Name Here"
+            required
+          />
+          <br />
+          <br />
+          <label for="lname">Last Name:</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Last Name Here"
+            required
+          />
+        </div>
+        <br />
+        <br />
+        <div class="payment">
+          <h1>Card Information</h1>
+          <label for="cardnmbr">Payment Card Number:</label>
+          <input
+            type="text"
+            id="cardnmbr"
+            name="cardnmbr"
+            placeholder="Your Card Number"
+            required
+          />
+          <br />
+          <br />
+          <label for="seccode">Security Code:</label>
+          <input
+            type="password"
+            id="seccode"
+            name="seccode"
+            placeholder="***"
+            required
+          />
+          <br />
+          <br />
+          <label for="expdate">Expiration Date:</label>
+          <input
+            type="month"
+            id="expdate"
+            name="expdate"
+            min="2022-09"
+            value="2022-09"
+            required
+          />
+        </div>
+        <br />
+        <br />
+        <div class="adrs">
+          <h1>Billing Address</h1>
+          <label for="AddressL1">Address Line 1:</label>
+          <input
+            type="text"
+            id="AddressL1"
+            name="AddressL1"
+            placeholder="Street Address"
+            required
+          />
+          <br />
+          <br />
+          <label for="AddressL2">Address Line 2:</label>
+          <input
+            type="text"
+            id="AddressL2"
+            name="AddressL2"
+            placeholder="Apt/Suite"
+            required
+          />
+        </div>
+        <br />
+        <br />
+        <button type="submit">Donate</button>
+      </form>
+    </div>
+  </body>
+</html>
