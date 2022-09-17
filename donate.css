@@ -1,3 +1,4 @@
+/* Main Styling */
 html {
   font-family: century-gothic, sans-serif;
   font-weight: 400;
@@ -13,8 +14,35 @@ body {
 }
 h1,
 p {
-  color: rgb(255, 255, 255);
+  color: black;
 }
+/* Navbar Styling*/
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
+}
+nav {
+  display: flex;
+}
+li a:hover {
+  background-color: grey;
+}
+/* Form Styling */
 .form {
   display: grid;
   grid-template-areas:
@@ -54,11 +82,11 @@ p {
   height: calc(100% - 1.5em);
 }
 .form button {
-  color: white;
+  color: black;
   background-color: #f7882f;
   padding: 1em;
 }
 #goal {
-  width: 97.5vw;
+  width: 97vw;
   height: 7vh;
 }
