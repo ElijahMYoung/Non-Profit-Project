@@ -1,0 +1,61 @@
+body {
+  background-color: rgba(107, 122, 143, 1);
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.animal-container {
+  background-color: rgba(220, 199, 170, 0.8);
+  margin: 30px;
+  border-radius: 30px;
+  box-shadow: 8px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 4%;
+}
+
+.animal-container img {
+  width: 45%;
+  height: 60%;
+  border-radius: 10px;
+}
+
+.animal-box {
+  width: 46%;
+  height: 70%;
+  margin: 10px;
+}
+
+.donate-button {
+  background-color: #f7882f;
+  border-color: antiquewhite;
+  width: 70px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 425px) {
+  .animal-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .animal-box {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .animal-container img {
+    width: 70%;
+    height: 90%;
+  }
+}
