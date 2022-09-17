@@ -3,7 +3,11 @@ html {
   font-weight: 400;
   font-style: normal;
 }
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: #dcc7aa;
 }
@@ -13,22 +17,48 @@ p {
 }
 .form {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "meter meter"
+    "pinfo payment"
+    "adrs adrs2"
+    "submit submit";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  gap: 0.8em 0.5em;
   background-color: #6b7a8f;
+  padding: 1vh 1vh;
 }
 
-button {
-  color: white;
-  background-color: #f7882f;
+.form label {
+  display: block;
 }
-
+.meter {
+  grid-area: meter;
+}
 .pinfo {
-  grid-area: 1 / 1 / 2 / 5;
+  grid-area: pinfo;
+}
+.payment {
+  grid-area: payment;
 }
 .adrs {
-  grid-area: 2 / 1 / 6 / 3;
+  grid-area: adrs;
 }
- {
-  grid-area: 2 / 3 / 6 / 5;
+.adrs2 {
+  grid-area: adrs2;
+}
+.submit {
+  grid-area: submit;
+}
+.form textarea {
+  height: calc(100% - 1.5em);
+}
+.form button {
+  color: white;
+  background-color: #f7882f;
+  padding: 1em;
+}
+#goal {
+  width: 97.5vw;
+  height: 7vh;
 }
