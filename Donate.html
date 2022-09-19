@@ -4,18 +4,173 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Donate</title>
+    <link rel="stylesheet" href="donate.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
   </head>
   <body>
+    <!--Nav Bar-->
     <nav>
       <ul>
         <li><a href="Home.html">Home</a></li>
-        <li><a href="About.html">About Us</a></li>
+        <li><a href="About.html">About</a></li>
         <li><a href="Contact.html">Contact Us</a></li>
         <li><a href="Impact.html">Our Impact</a></li>
         <li><a href="Donate.html">Donate</a></li>
       </ul>
     </nav>
+    <br />
+    <br />
+    <!--Form-->
+    <form class="form">
+      <!---Goal Meter--->
+      <div class="meter">
+        <label for="goal"><h1>Donation Goal:</h1></label>
+        <meter
+          id="goal"
+          min="0"
+          max="1000000"
+          low="333333"
+          high="666666"
+          optimum="800000"
+          value="609380"
+        >
+          at 609380/1000000
+        </meter>
+      </div>
+      <!--Form Content-->
+      <div class="pinfo">
+        <h1>Personal Information</h1>
+        <label for="fname">First Name:</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="First Name Here"
+          required
+        />
+        <label for="lname">Last Name:</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Last Name Here"
+          required
+        />
+      </div>
+
+      <div class="payment">
+        <h1>Card Information</h1>
+        <label for="cardnmbr">Payment Card Number:</label>
+        <input
+          type="text"
+          id="cardnmbr"
+          name="cardnmbr"
+          placeholder="Your Card Number"
+          required
+        />
+
+        <label for="seccode">Security Code:</label>
+        <input
+          type="password"
+          id="seccode"
+          name="seccode"
+          placeholder="***"
+          required
+        />
+
+        <label for="expdate">Expiration Date:</label>
+        <input
+          type="month"
+          id="expdate"
+          name="expdate"
+          min="2022-09"
+          value="2022-09"
+          required
+        />
+      </div>
+
+      <div class="adrs">
+        <h1>Billing Address</h1>
+        <label for="AddressL1">Address Line 1:</label>
+        <input
+          type="text"
+          id="AddressL1"
+          name="AddressL1"
+          placeholder="Street Address"
+          required
+        />
+
+        <label for="AddressL2">Address Line 2:</label>
+        <input
+          type="text"
+          id="AddressL2"
+          name="AddressL2"
+          placeholder="Apt/Suite"
+          required
+        />
+      </div>
+      <div class="adrs2">
+        <label for="ZipCode">Zip Code:</label>
+        <input
+          type="text"
+          id="ZipCode"
+          name="ZipCode"
+          placeholder="Zip Code"
+          required
+        />
+        <label for="City">City:</label>
+        <input type="text" id="City" name="City" placeholder="City" required />
+        <label for="State">State:</label>
+        <input
+          type="text"
+          id="State"
+          name="State"
+          placeholder="State"
+          required
+        />
+      </div>
+      <br />
+      <br />
+      <button class="submit" type="submit">Donate</button>
+    </form>
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <a
+          href="https://www.facebook.com"
+          aria-label="Facebook"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://twitter.com"
+          aria-label="Twitter"
+          class="fa fa-twitter"
+        ></a>
+        <a
+          href="https://www.instagram.com"
+          aria-label="Instagram"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          href="https://www.snapchat.com"
+          aria-label="Snapchat"
+          class="fa fa-snapchat-ghost"
+        ></a>
+      </div>
+      <div class="footer-left">
+        <p class="footer-links">
+          <a class="link-1" href="home.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="impact.html">Our Impact</a>
+          <a href="Donate.html">Donate</a>
+        </p>
+        <p>Non Profit &copy; 2022</p>
+      </div>
+    </footer>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </body>
 </html>
